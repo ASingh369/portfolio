@@ -1,0 +1,63 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* font family, set colors */
+body{
+  line-height: 1.5;
+}
+
+/* Menu Button */
+.menu-toggler {
+  position: absolute;
+  z-index: 3;
+  right: 30px;
+  top: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-toggler .menu-line{
+  width: 32px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #000;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu-toggler.close{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+/* Line 1 */
+.menu-toggler.close .menu-line:nth-child(1){
+  transform: rotate(45deg) translate(5px, 5px);
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+  -moz-transform: rotate(45deg) translate(5px, 5px);
+  -ms-transform: rotate(45deg) translate(5px, 5px);
+  width: 40px;
+}
+
+/* Line 2 */
+.menu-toggler.close .menu-line:nth-child(2){
+  opacity: 0;
+}
+
+/* Line 3 */
+.menu-toggler.close .menu-line:nth-child(3){
+  transform: rotate(-45deg) translate(7px, -6px);
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+  -moz-transform: rotate(-45deg) translate(7px, -6px);
+  -ms-transform: rotate(-45deg) translate(7px, -6px);
+  width: 40px;
+}
