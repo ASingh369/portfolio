@@ -1,0 +1,31 @@
+/* Medium size deivices (tablets) */
+@media screen and (max-width: 750px){
+
+  .menu .menu-info{
+    width: 50%;
+    padding-right: 1rem;;
+  }
+
+  .menu .menu-nav{
+    width: 50%;
+    padding-left: 1rem;
+  }
+}
+
+
+/* small devices (smartphones) */
+@media screen and (max-width: 550px){
+
+  .menu .menu-info{
+    display: none;
+  }
+
+  .menu .menu-nav{
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 20vh;
+  }
+}
+
