@@ -2,11 +2,14 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-size: 16px;
 }
 
 /* font family, set colors */
 body{
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   line-height: 1.5;
 }
 
@@ -19,18 +22,50 @@ body{
   color: #b3b3b3;
 }
 
+.alt-font{
+  font-family: 'Roboto', sans-serif;
+}
+
 .mb-3{ margin-bottom: 3rem;}
 .mb-2{ margin-bottom: 1.5rem;}
 .mb-1{ margin-bottom: 0.5rem;}
 
+.mr-3{ margin-right: 3rem;}
+
 .text-small { font-size: small;}
 
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  padding: 0.6rem 1.7rem;
+  font-size: 1rem;
+  border: 1px solid #2fe0b8;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+}
+
+.btn:hover{
+  background-color: #2fe0b8;
+  font-size: 1.15rem;
+}
+
 /* Menu Button */
-.menu-toggler {
+.toggler-container{
   position: absolute;
-  z-index: 3;
   right: 30px;
   top: 35px;
+  padding: 1.2rem 1rem;
+  background-color: #111517;
+  z-index: 3;
+  border-radius: 50%;
+}
+
+.menu-toggler {
+  z-index: 3;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -42,11 +77,15 @@ body{
   width: 32px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #000;
+  background: #fff;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+
+.menu-toggler .menu-line:nth-child(3){
+  margin-bottom: 0;
 }
 
 
@@ -109,6 +148,7 @@ body{
   top: 0;
   width: 100%;
   visibility: hidden;
+  z-index: 2;
 }
 
 .menu.open {
@@ -201,7 +241,7 @@ body{
   top: 0;
   left: 0;
   width: 0;
-  color: #49fcd4;
+  color: #2fe0b8;
   white-space: nowrap;
   transition: all 0.5s ease-out;
   overflow: hidden;
@@ -212,10 +252,11 @@ body{
 }
 
 .menu .menu-nav .nav-link a.active{
-  color: #49fcd4;
+  color: #2fe0b8;
 }
 
-/* confused between colors #1cb495  #49fcd4 #fed136 */
+/* confused between colors #1cb495  #49fcd4 #fed136 #2fe0b8 */
+
 .menu .menu-nav .nav-link{
   transform: translate3d(100px, 0, 0);
   -webkit-transform: translate3d(100px, 0, 0);
@@ -260,3 +301,42 @@ body{
   color: #fff;
 }
 
+/* Home section */
+#home{
+  background-image: url("https://images.pexels.com/photos/825258/pexels-photo-825258.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* background-color: red; */
+}
+
+.dark-overlay{
+  background-color: rgba(17,21,23,0.8);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.d-flex{
+  display: flex;
+  align-items: center!important;
+  height: 100%;
+}
+
+.name{
+  font-size: 2.8rem;
+  margin-bottom: 0;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+.home-details{
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.7;
+  margin: 1rem 0 2rem 0;
+}
+
+.home-content{
+  padding: 0 8rem;
+  max-width: 750px;
+}
