@@ -48,6 +48,11 @@
   .project .container img{
     width: 32rem;
   }
+  
+  .toggler-container{
+    padding: 1.4rem 0.9rem;
+  }
+
 }
 
 
