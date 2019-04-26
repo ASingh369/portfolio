@@ -339,3 +339,30 @@ body{
   padding: 0 8rem;
   max-width: 52rem;
 }
+
+
+/* Projects Page */
+
+.top{
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.top h1{
+  font-size: 1.8rem;
+}
+
+.image-container{
+  max-width: 9rem;
+  max-height: 9rem;
+  display: inline;
+}
+
+.top i{
+  margin-bottom: 2.3rem;  
+  background-color: #2fe0b8;
+  color: #fff;
+  padding: 2.4rem 2.5rem;
+  border-radius: 50%;
+}
+
