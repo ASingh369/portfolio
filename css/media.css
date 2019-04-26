@@ -9,6 +9,14 @@
     padding: 0 4rem;
   }
 
+  .container{
+    padding: 0 4rem;
+  }
+
+  .project .container img{
+    width: 35rem;
+  }
+
 }
 
 /* Medium size deivices (tablets) */
@@ -31,6 +39,14 @@
   
   .home-content{
     padding: 0 2rem;
+  }
+
+  .container{
+    padding: 0 2rem;
+  }
+
+  .project .container img{
+    width: 32rem;
   }
 }
 
@@ -56,6 +72,14 @@
   
   .home-content{
     padding: 0 1rem;
+  }
+
+  .container{
+    padding: 0 0;
+  }
+
+  .project .container img{
+    width: 20rem;
   }
 }
 

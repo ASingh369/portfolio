@@ -34,6 +34,10 @@ body{
 
 .text-small { font-size: small;}
 
+.bg-dark{
+  background-color: #111517;
+}
+
 .btn{
   display: inline-block;
   text-decoration: none;
@@ -51,6 +55,17 @@ body{
 .btn:hover{
   background-color: #2fe0b8;
   font-size: 1.15rem;
+}
+
+.btn-light{
+  width: 13rem;
+  border: 1px solid #fff;
+}
+
+.btn-light:hover{
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
 }
 
 /* Menu Button */
@@ -350,6 +365,7 @@ body{
 
 .top h1{
   font-size: 1.8rem;
+  padding: 0 1.3rem;
 }
 
 .image-container{
@@ -366,3 +382,31 @@ body{
   border-radius: 50%;
 }
 
+.project{
+  padding: 5rem 1.5rem 5rem 1.5rem;
+  text-align: center;
+}
+
+.container{
+  max-width: 750px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.project .container h2{
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+}
+
+.project .container p{
+  font-size: 1.1rem;
+  padding: 2rem 0;
+}
+
+.project .container img{
+  width: 40rem;
+}
+
+.project .container a{
+  margin: 0.7rem;
+}
