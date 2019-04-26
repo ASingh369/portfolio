@@ -68,9 +68,21 @@ body{
   color: #000;
 }
 
+.btn-dark{
+  color: #000;
+  width: 13rem;
+  border: 1px solid #111517;
+}
+
+.btn-dark:hover{
+  background-color: #111517;
+  border: 1px solid #111517;
+  color: #fff;
+}
+
 /* Menu Button */
 .toggler-container{
-  position: absolute;
+  position: fixed;
   right: 30px;
   top: 35px;
   padding: 1.3rem 1rem;
