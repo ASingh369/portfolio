@@ -5,11 +5,15 @@ const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuInfo = document.querySelector('.menu-info');
 const info = document.querySelector('.info');
-const navLinks = document.querySelectorAll('.nav-link')
+const navLinks = document.querySelectorAll('.nav-link');
+const loader = document.querySelector(".loader");
 
 let openMenu = false;
 
 menuToggler.addEventListener('click', toggleMenu);
+window.addEventListener("load", function(){
+  loader.classList.add("hidden");
+});
 
 function toggleMenu(){
   if (!openMenu){
@@ -18,7 +22,9 @@ function toggleMenu(){
     menuNav.classList.add('open');
     menuInfo.classList.add('open');
     info.classList.add('last-fade-in');
-    navLinks.forEach(link => link.classList.add('open'));
+    for (let i = 0; i < 4; i++){
+      navLinks[i].classList.add('open');
+    }
     openMenu = true;
   }
   else{
@@ -27,7 +33,9 @@ function toggleMenu(){
     menuNav.classList.remove('open');
     menuInfo.classList.remove('open');
     info.classList.remove('last-fade-in');
-    navLinks.forEach(link => link.classList.remove('open'));
+    for (let i = 0; i < 4; i++){
+      navLinks[i].classList.remove('open');
+    }
     openMenu = false;
   }
 }
