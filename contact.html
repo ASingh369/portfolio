@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Chrome address bar color change -->
+  <meta name="theme-color" content="#111517">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans|Source+Sans+Pro" rel="stylesheet">
+
+  <!-- Font awesome cdn -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+  <!-- project css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Css for small screens -->
+  <link rel="stylesheet" href="css/media.css">
+  <title>Amrit Pal Singh - Full-Stack Web Developer</title>
+</head>
+<body>
+    <!-- Default display before content is loaded -->
+    <div class="loader">
+        <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+        </div>
+    </div>
+
+  <header>
+      <div class="toggler-container">
+        <div class="menu-toggler">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+      </div>
+
+      <nav class="menu alt-font">
+          <div class="menu-info text-light">
+              <div class="info">
+                <h3 class="mb-2">Info</h3>
+                <p class="text-white mb-1 text-small">Contact me here!</p>
+                <div class="text-small mb-2">
+                    <div>Phone: (604)-657-3049</div>
+                    <div>Email: contact@apsingh.me</div>
+                </div>
+                <p class="text-small text-white mb-1">Let's get social</p>
+                <div class="text-small">
+                    <div><a href="https://twitter.com/3AtBack" target="_blank" class="social-link">Twitter</a> </div>
+                    <div><a href="https://www.linkedin.com/in/amrit-pal-singh-83120a157/" target="_blank" class="social-link"> Linkedin</a></div>
+                    <div><a href="https://github.com/ASingh369" target="_blank" class="social-link"> Github </a></div>
+                </div>
+             </div>
+          </div>
+          <ul class="menu-nav">
+                <li class="nav-link">
+                    <a href="index.html" data-text="HOME">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html" data-text="ABOUT">About</a>
+                </li>
+                <li class="nav-link">
+                    <a href="projects.html" data-text="Projects">Projects</a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html" class="active" data-text="contact">Contact</a>
+                </li>
+            </ul>
+      </nav>
+  </header>
+
+  <main id="contact">
+      <section class="contact">
+        <div class="contact-container">
+          <h2>Contact me</h2>
+          <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the form below.</p>
+          <form action="">
+            <div class="contact-top">
+              <input type="text" class="contact-name" placeholder="Name" name="name">
+              <input type="email" class="contact-email" placeholder="Email" name="email">
+            </div>
+            <input type="text" class="subject" placeholder="Subject" name="subject">
+            <textarea name="message" class="message" placeholder="Message" rows="5"></textarea>
+            <div class="send">
+              <input type="submit" value="SEND" class="btn">
+            </div>
+          </form>
+          <div class="social-links">
+            <a href=""><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
+            <a href=""><i class="fab fa-twitter"></i> TWITTER</a>
+            <a href=""><i class="fab fa-github"></i> GITHUB</a>
+          </div>
+        </div>
+      </section>
+      <section class="map" id="map"></section>
+  </main>
+
+<!-- AIzaSyBFF3gVHgEg-OyZ5FcbQ8uz8X0KmtzKGlk -->
+  <!-- Project js -->
+  <script src="js/main.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFF3gVHgEg-OyZ5FcbQ8uz8X0KmtzKGlk&callback=initMap">
+</script>
+</body>
+</html>

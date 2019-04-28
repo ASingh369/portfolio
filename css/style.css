@@ -26,7 +26,7 @@ body{
 
 .mb-3{ margin-bottom: 3rem;}
 .mb-2{ margin-bottom: 1.5rem;}
-.mb-1{ margin-bottom: 0.5rem;}
+.mb-1{ margin-bottom: 0.5rem !important;}
 
 .mr-3{ margin-right: 3rem;}
 
@@ -35,10 +35,11 @@ body{
 .bg-dark{ background-color: #111517;}
 
 .btn{
+  background-color: transparent;
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: #fff;
+  color: #2fe0b8;
   padding: 0.6rem 1.7rem;
   font-size: 1rem;
   border: 1px solid #2fe0b8;
@@ -50,11 +51,13 @@ body{
 
 .btn:hover{
   background-color: #2fe0b8;
+  color: #fff;
   font-size: 1.15rem;
 }
 
 .btn-light{
   width: 13rem;
+  color: #fff;
   border: 1px solid #fff;
 }
 
@@ -630,15 +633,15 @@ body{
 .about-top{
   text-align: center;
   z-index: 0;
-  background: url(../img/about.jpg);
+  background: url(../img/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .overlay{
-  background-color: rgba(17,21,23, 0.9);
-  padding: 7rem 5rem 17rem 5rem;
+  background-color: rgba(17,21,23, 0.85);
+  padding: 7rem 5rem 16rem 5rem;
   overflow: hidden;
 }
 
@@ -656,7 +659,7 @@ body{
 
 .cards{
   z-index: 1;
-  margin: -10rem 9.3rem 5rem 9.3rem;
+  margin: -9rem 9.3rem 5rem 9.3rem;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #c2c3c3;
@@ -691,3 +694,118 @@ body{
   color: #2fe0b8;
   text-decoration: none;
 }
+
+/* Contact Page */
+#contact{
+  display: flex; 
+  /* flex-direction: column; */
+}
+
+#contact section{
+  flex: 1;
+}
+
+.contact{
+  background-color: #111517;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-name, .contact-email, .subject, .message{
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #3c3e41;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+
+/* .contact-name:, .contact-email, .subject, .message */
+
+.contact-top{
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+
+.contact-name{
+  margin-right: 3px;
+}
+
+.contact-email{
+  margin-left: 3px;
+}
+
+.subject{
+  margin-bottom: 0.4rem;
+}
+
+.message{
+  margin-bottom: 1rem;
+}
+
+.send{
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.contact h2{
+  color: #2fe0b8;
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.contact p{
+  margin-bottom: 1rem;
+  font-size: 1.1rem
+}
+
+.contact-container{
+  padding: 0 4rem;
+}
+
+.social-links a{
+  margin: 3px; 
+  display: inline-block;
+  width: 8rem;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.social-links a:nth-child(1){
+  background-color: #0073b1;
+}
+
+.social-links a:nth-child(2){
+  background-color: rgb(29,161,242);
+}
+
+.social-links a:nth-child(3){
+  background-color: #4f4f4f;
+}
+
+.map{
+  height: 100vh;
+}
+
+.home-marker{
+  color: #4f4f4f;
+}
+/* 
+.gm-style .gm-style-iw-c{
+  color: red;
+  background-color: green;
+}
+
+.gm-style .gm-style-iw-d{
+  color: red;
+  background-color: green;
+} */
+
