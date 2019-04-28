@@ -17,6 +17,10 @@
     width: 35rem;
   }
 
+  .cards{
+    margin: -10rem 2rem 7rem 2rem;
+  }
+
 }
 
 /* Medium size deivices (tablets) */
@@ -53,6 +57,18 @@
     padding: 1.4rem 0.9rem;
   }
 
+  
+  .cards{
+    flex-direction: column;
+  }
+
+  .cards div:nth-child(2){
+    border-top: 1px solid #c2c3c3;
+    border-bottom: 1px solid #c2c3c3;
+    border-left: none;
+    border-right: none;
+  }
+
 }
 
 
@@ -85,6 +101,10 @@
 
   .project .container img{
     width: 22rem;
+  }
+
+  .cards{
+    margin: -10rem 1.5rem 7rem 1.5rem;
   }
 }
 
