@@ -25,6 +25,10 @@
   .overlay{
     padding: 7rem 4rem 16rem 4rem;
   }
+
+  .contact-container{
+    padding: 0 1rem;
+  }
 }
 
 /* Medium size deivices (tablets) */
@@ -77,14 +81,29 @@
     padding: 7rem 3rem 16rem 3rem;
   }
 
+  #contact{
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .contact-container{
+    padding: 0 4rem;
+  }
+
+  .contact{
+    height: auto;
+    margin: 5rem 0;
+  }
+
+  .map{
+    height: 30rem;
+    margin: 3rem;
+  }
 }
 
 
 /* small devices (smartphones) */
 @media screen and (max-width: 550px){
-  *{
-    font-size: 13px;
-  }
   
   .menu .menu-info{
     display: none;
@@ -117,6 +136,10 @@
 
   .overlay{
     padding: 7rem 1rem 16rem 1rem;
+  }
+
+  .contact-container{
+    padding: 0 1rem;
   }
 }
 

@@ -698,7 +698,6 @@ body{
 /* Contact Page */
 #contact{
   display: flex; 
-  /* flex-direction: column; */
 }
 
 #contact section{
@@ -723,8 +722,6 @@ body{
   color: #fff;
   outline: none;
 }
-
-/* .contact-name:, .contact-email, .subject, .message */
 
 .contact-top{
   display: flex;
@@ -798,14 +795,4 @@ body{
 .home-marker{
   color: #4f4f4f;
 }
-/* 
-.gm-style .gm-style-iw-c{
-  color: red;
-  background-color: green;
-}
-
-.gm-style .gm-style-iw-d{
-  color: red;
-  background-color: green;
-} */
 

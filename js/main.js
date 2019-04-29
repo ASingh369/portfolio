@@ -53,12 +53,13 @@ function initMap(){
     fullscreenControl: false,
     streetViewControl: false,
     styles: [
+      {elementType: 'labels.text.stroke', stylers: [{color: '#000'}]},
       {
         "featureType": "all",
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "color": "#444444"
+                "color": "#000000"
             }
         ]
     },
@@ -190,7 +191,7 @@ function initMap(){
   var marker = new google.maps.Marker({
     position: {lat: 49.178009, lng: -122.854111},
     map: map,
-    icon: '../img/location2.png'
+    icon: 'img/location.png'
   });
 
   var infoWindow = new google.maps.InfoWindow({
