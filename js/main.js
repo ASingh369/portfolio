@@ -195,7 +195,7 @@ function initMap(){
   });
 
   var infoWindow = new google.maps.InfoWindow({
-    content: '<h3 class="home-marker">9651 Salal Place <br> Surrey, BC V3T 5A8  </h3>'
+    content: '<h3 class="home-marker"> <i class="fas fa-phone"></i> (604)-657-3049 <br>  <i class="far fa-envelope"></i> amritpalsinghs369@gmail.com </h3>'
   });
 
   marker.addListener('click', function(){
