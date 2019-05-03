@@ -31,7 +31,9 @@ body{
 .mr-3{ margin-right: 3rem;}
 
 .text-small { font-size: small;}
+.text-center{ text-align: center;}
 
+.justify-content-center{ justify-content: center;}
 .bg-dark{ background-color: #111517;}
 
 .btn{
@@ -796,3 +798,9 @@ body{
   color: #4f4f4f;
 }
 
+/* Thank you page */
+
+.thank p{
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}

@@ -4,21 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Chrome address bar color change -->
-  <meta name="theme-color" content="#111517">
   <meta name="title" content="Django Full-Stack Web Developer Portfolio"/>
   <meta name="description" content="Django Full-Stack Web developer portfolio. Check out some of the recent projects I have worked on."/>
   <meta name="keywords" content="Django, Amrit Pal Singh, portfolio, vancouver, full stack web developer, web Developer, amrit">
 
+  <!-- Chrome address bar color change -->
+  <meta name="theme-color" content="#111517">
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans|Source+Sans+Pro" rel="stylesheet">
-
-  <!-- Font awesome cdn -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
 
   <!-- project css -->
   <link rel="stylesheet" href="css/style.css">
@@ -26,11 +21,11 @@
   <!-- Css for small screens -->
   <link rel="stylesheet" href="css/media.css">
 
-   <!-- Favicon -->
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-  <title>Contact Me</title>
+  <title>Amrit Pal Singh - Full-Stack Web Developer</title>
 </head>
 <body>
     <!-- Default display before content is loaded -->
@@ -71,7 +66,7 @@
           </div>
           <ul class="menu-nav">
                 <li class="nav-link">
-                    <a href="/" data-text="HOME">Home</a>
+                    <a href="/" class="active" data-text="HOME">Home</a>
                 </li>
                 <li class="nav-link">
                     <a href="about.html" data-text="ABOUT">About</a>
@@ -80,43 +75,25 @@
                     <a href="projects.html" data-text="Projects">Projects</a>
                 </li>
                 <li class="nav-link">
-                    <a href="contact.html" class="active" data-text="contact">Contact</a>
+                    <a href="contact.html" data-text="contact">Contact</a>
                 </li>
             </ul>
       </nav>
   </header>
 
-  <main id="contact" class="bg-dark">
-      <section class="contact">
-        <div class="contact-container">
-          <h2>Contact me</h2>
-          <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the form below.</p>
-          <form action="http://contact.amritpalsingh.me/" method="POST">
-            <div class="contact-top">
-              <input type="text" class="contact-name" placeholder="Name" name="name">
-              <input type="email" class="contact-email" placeholder="Email" name="email">
-            </div>
-            <input type="text" class="subject" placeholder="Subject" name="subject">
-            <textarea name="message" class="message" placeholder="Message" rows="5"></textarea>
-            <div class="send">
-              <input type="submit" value="SEND" class="btn">
-            </div>
-          </form>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/amrit-pal-singh-83120a157/" target="_blank"><i class="fab fa-linkedin-in"></i> LINKEDIN</a>
-            <a href="https://twitter.com/3AtBack" target="_blank"><i class="fab fa-twitter"></i> TWITTER</a>
-            <a href="https://github.com/ASingh369" target="_blank"><i class="fab fa-github"></i> GITHUB</a>
+  <main id="home">
+      <div class="dark-overlay text-white">
+          <div class="d-flex justify-content-center">
+              <div class="text-center thank">
+                <p>Thank you for your message!</p> 
+                <a href="/" class="btn">Home</a>
+              </div>
           </div>
-        </div>
-      </section>
-      <section class="map" id="map"></section>
+      </div>
   </main>
 
-<!-- AIzaSyBFF3gVHgEg-OyZ5FcbQ8uz8X0KmtzKGlk -->
+
   <!-- Project js -->
   <script src="js/main.js"></script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFF3gVHgEg-OyZ5FcbQ8uz8X0KmtzKGlk&callback=initMap">
-</script>
 </body>
 </html>
