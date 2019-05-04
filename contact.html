@@ -93,13 +93,13 @@
           <p>If you wanna get in touch, talk to me about a project collaboration or just say hi, fill up the form below.</p>
           <form action="http://contact.amritpalsingh.me/" method="POST">
             <div class="contact-top">
-              <input type="text" class="contact-name" placeholder="Name" name="name">
-              <input type="email" class="contact-email" placeholder="Email" name="email">
+              <input type="text" class="contact-name" placeholder="Name" name="name" required>
+              <input type="email" class="contact-email" placeholder="Email" name="email" required>
             </div>
-            <input type="text" class="subject" placeholder="Subject" name="subject">
-            <textarea name="message" class="message" placeholder="Message" rows="5"></textarea>
+            <input type="text" class="subject" placeholder="Subject" name="subject" required>
+            <textarea name="message" class="message" placeholder="Message" rows="5" required></textarea>
             <div class="send">
-              <input type="submit" value="SEND" class="btn">
+              <input type="submit" value="SEND" class="btn cursor-pointer">
             </div>
           </form>
           <div class="social-links">

@@ -81,6 +81,8 @@ body{
   color: #fff;
 }
 
+.cursor-pointer{ cursor: pointer;}
+
 /* cube loading effect */
 .loader{
   position: fixed;
