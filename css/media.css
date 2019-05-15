@@ -1,115 +1,110 @@
 /* Large devices */
-@media screen and (max-width: 1150px){
-
-  *{
+@media screen and (max-width: 1150px) {
+  * {
     font-size: 15px;
   }
 
-  .home-content{
+  .home-content {
     padding: 0 4rem;
   }
 
-  .container{
+  .container {
     padding: 0 4rem;
   }
 
-  .project .container img{
+  .project .container img {
     width: 35rem;
   }
 
-  .cards{
+  .cards {
     margin: -10rem 2rem 5rem 2rem;
   }
 
-    
-  .overlay{
+  .overlay {
     padding: 7rem 4rem 16rem 4rem;
   }
 
-  .contact-container{
+  .contact-container {
     padding: 0 1rem;
   }
 }
 
 /* Medium size deivices (tablets) */
-@media screen and (max-width: 750px){
-
-  *{
+@media screen and (max-width: 750px) {
+  * {
     font-size: 14px;
   }
-  
-  .menu .menu-info{
+
+  .menu .menu-info {
     width: 50%;
-    padding-right: 1rem;;
+    padding-right: 1rem;
   }
 
-  .menu .menu-nav{
+  .menu .menu-nav {
     width: 50%;
     padding-left: 1rem;
   }
 
-  
-  .home-content{
+  .home-content {
     padding: 0 2rem;
   }
 
-  .container{
+  .container {
     padding: 0 2rem;
   }
 
-  .project .container img{
+  .project .container img {
     width: 32rem;
   }
-  
-  .toggler-container{
+
+  .toggler-container {
     padding: 1.4rem 0.9rem;
   }
 
-  
-  .cards{
+  .cards {
     flex-direction: column;
   }
 
-  .cards div:nth-child(2){
+  .cards div:nth-child(2) {
     border-top: 1px solid #c2c3c3;
     border-bottom: 1px solid #c2c3c3;
     border-left: none;
     border-right: none;
   }
 
-  .overlay{
+  .overlay {
     padding: 7rem 3rem 16rem 3rem;
   }
 
-  #contact{
-    display: flex; 
+  #contact {
+    /* display: flex; */
     flex-direction: column;
   }
 
-  .contact-container{
+  .contact-container {
     padding: 0 4rem;
   }
 
-  .contact{
+  .contact {
     height: auto;
     margin: 5rem 0;
+    width: auto !important;
   }
 
-  .map{
+  .map {
     height: 30rem;
     margin: 3rem;
+    width: auto !important;
   }
 }
 
-
 /* small devices (smartphones) */
-@media screen and (max-width: 550px){
-  
-  .menu .menu-info{
+@media screen and (max-width: 550px) {
+  .menu .menu-info {
     display: none;
   }
 
-  .menu .menu-nav{
+  .menu .menu-nav {
     width: 100%;
     text-align: center;
     height: 100vh;
@@ -117,32 +112,30 @@
     margin-bottom: 20vh;
   }
 
-  
-  .home-content{
+  .home-content {
     padding: 0 1rem;
   }
 
-  .container{
+  .container {
     padding: 0 0;
   }
 
-  .project .container img{
+  .project .container img {
     width: 22rem;
   }
 
-  .cards{
+  .cards {
     margin: -10rem 1.5rem 5rem 1.5rem;
   }
 
-  .overlay{
+  .overlay {
     padding: 7rem 1rem 16rem 1rem;
   }
 
-  .contact-container{
+  .contact-container {
     padding: 0 1rem;
   }
-  .map{
+  .map {
     margin: 1rem;
   }
 }
-
